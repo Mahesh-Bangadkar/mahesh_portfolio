@@ -1,0 +1,24 @@
+/* index.css - minimal placeholder to satisfy the link in index.html
+   If you prefer using Tailwind via CDN, this file can hold only
+   your additional custom CSS rules. If you want to build Tailwind
+   locally, replace this with a file that contains the Tailwind
+   directives and configure PostCSS accordingly.
+*/
+
+/* Example small helpers (optional) */
+@import "tailwindcss";
+html, body, #root {
+  height: 100%;
+}
+
+.sr-only { 
+  position: absolute; 
+  width: 1px; 
+  height: 1px; 
+  padding: 0; 
+  margin: -1px; 
+  overflow: hidden; 
+  clip: rect(0,0,0,0); 
+  white-space: nowrap; 
+  border: 0; 
+}
