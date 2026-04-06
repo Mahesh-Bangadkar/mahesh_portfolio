@@ -1,6 +1,6 @@
 import React from 'react';
 import { PROJECTS } from '../constants';
-import { IconGithub } from './Icons';
+import { IconExternalLink, IconGithub } from './Icons';
 
 const Projects: React.FC = () => {
   return (
@@ -34,7 +34,17 @@ const Projects: React.FC = () => {
                 {project.description}
               </p>
               
-              <div className="pt-4 border-t border-slate-800 flex justify-end">
+              <div className="pt-4 border-t border-slate-800 flex items-center justify-end gap-4">
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-500 hover:text-neon-DEFAULT transition-colors flex items-center gap-2 text-sm"
+                  >
+                    <IconExternalLink className="w-4 h-4" /> Live Demo
+                  </a>
+                )}
                 <a
                   href={project.githubUrl || '#'}
                   target={project.githubUrl ? '_blank' : undefined}

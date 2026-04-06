@@ -3,6 +3,7 @@ export interface Project {
   technologies: string[];
   description: string;
   githubUrl?: string;
+  liveUrl?: string;
 }
 
 export interface ExperienceItem {

@@ -78,12 +78,14 @@ export const PROJECTS: Project[] = [
     technologies: ["Python", "Streamlit", "Scikit-learn"],
     description: "Personal Project. Developed a content-based movie recommendation system using TF-IDF and cosine similarity to suggest similar movies based on user input. Built an interactive web interface using Streamlit for real-time recommendations. Integrated external APIs for movie posters and trailer links to improve user engagement.",
     githubUrl: "https://github.com/Mahesh-Bangadkar/Netflix-Style-Recommendation-System.git",
+    liveUrl: "https://netflix-style-recommendation-system-nnteto8efbdpxzzjc2mves.streamlit.app/",
   },
   {
     title: "Movie Recommendation System 2",
     technologies: ["Python", "Streamlit", "Scikit-learn"],
     description: "Personal Project. Built a second version of a content-based movie recommendation app using TF-IDF and cosine similarity. Added a Streamlit interface for instant suggestions and integrated external APIs for posters and trailer links for a richer user experience.",
     githubUrl: "https://github.com/Mahesh-Bangadkar/Resume-analyzer.git",
+    liveUrl: "https://resume-analyzer-mahesh.streamlit.app/",
   },
   {
     title: "GSM Call/Message Alert System",
