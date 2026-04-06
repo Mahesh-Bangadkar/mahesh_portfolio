@@ -35,8 +35,13 @@ const Projects: React.FC = () => {
               </p>
               
               <div className="pt-4 border-t border-slate-800 flex justify-end">
-                <a href="#" className="text-slate-500 hover:text-white transition-colors flex items-center gap-2 text-sm">
-                  <IconGithub className="w-4 h-4" /> View Code
+                <a
+                  href={project.githubUrl || '#'}
+                  target={project.githubUrl ? '_blank' : undefined}
+                  rel={project.githubUrl ? 'noopener noreferrer' : undefined}
+                  className="text-slate-500 hover:text-white transition-colors flex items-center gap-2 text-sm"
+                >
+                  <IconGithub className="w-4 h-4" /> {project.githubUrl ? 'View Code' : 'Coming Soon'}
                 </a>
               </div>
             </div>
