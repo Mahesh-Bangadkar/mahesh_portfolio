@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
           {/* Image Container */}
           <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-slate-800 shadow-2xl z-10">
             <img 
-              src="\Mahesh.jpg" 
+              src="\maheshnew2.jpeg" 
               alt={PERSONAL_INFO.name}
               className="w-full h-full object-cover  hover:grayscale-0 transition-all duration-500"
             />
